@@ -5,11 +5,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
-import lombok.Generated;
 
 @Data
 @Entity
-public class MenuItem {
+public class Menu {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
