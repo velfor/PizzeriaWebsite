@@ -1,9 +1,9 @@
 package com.pizza.website.service;
 
-import com.pizza.website.model.Menu;
+import com.pizza.website.model.MenuItem;
 import org.springframework.data.domain.Sort;
 
 
 public interface MenuItemService {
-    Iterable<Menu> findAll(Sort sort);
+    Iterable<MenuItem> findAll(Sort sort);
 }

@@ -1,6 +1,6 @@
 package com.pizza.website.controller;
 
-import com.pizza.website.model.Menu;
+import com.pizza.website.model.MenuItem;
 import com.pizza.website.service.MenuItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
@@ -13,7 +13,7 @@ public class ApiController {
     private MenuItemService menuItemService;
 
     @GetMapping("/api/menu")
-    public Iterable<Menu> findAll(){
+    public Iterable<MenuItem> findAll(){
         return menuItemService.findAll(Sort.by("name"));
     }
 }
